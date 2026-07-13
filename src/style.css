@@ -40,15 +40,53 @@
   }
 }
 
+/* .photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .city {
+    display: absolute;
+    .image {
+      width: 497px;
+      height: 661px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 26px;
+    }
+  }
+} */
+
 .photos {
   display: flex;
   justify-content: center;
   align-items: center;
-  .image {
-    width: 497px;
-    height: 661px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 26px;
+  gap: 30px;
+
+  .city {
+    position: relative;
+
+    .image {
+      width: 497px;
+      height: 661px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 26px;
+      display: block;
+    }
+
+    .name,
+    .location {
+      position: absolute;
+      left: 20px;
+      color: white;
+    }
+
+    .name {
+      bottom: 50px;
+    }
+
+    .location {
+      bottom: 25px;
+    }
   }
 }
